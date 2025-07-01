@@ -1,5 +1,6 @@
 <!doctype html>
 <html> 
+<meta name=viewpoint" content="width=device-width,initial-scale=1.0"/>
 <title>photoshow</title>
 
 <div id="heading"><head>
@@ -42,6 +43,57 @@ li
 {
 font-size:40%;
 }
+/* extra small devices (phones, 600px and down) */
+@media only screen and (max-width:600px)
+{
+body{background:teal;}
+hearder{
+  //display:none;
+  font-size:20px;
+}
+.pic
+{
+width:100%;
+margin:1px;
+margin-bottom:10px;
+}
+}
+/* small devices (potrait tablets and large phones, 600px nd up) */
+@media only screen and (min-width:600px)
+{
+#container
+{
+margin-left:50px;
+}
+
+body{background:orange;}
+.pic
+{
+width:40%;
+margin:0px;
+mrgin-bottom:10px;
+}
+}
+/* medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:768px)
+body{background:cyan;}
+.pic
+  {
+  width:30%;
+  }
+}
+/* large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-width:992px)
+{
+body{background:yellow;}
+}
+/* extra large devices (large laptops/desktops, 1200px and up)*/
+  @media only screen and (min-width:1200px)
+  {
+  body{background:purple;}
+  }
+
+     
 </style>
 <li><a href="index.html">home</a></li>
 <body>
