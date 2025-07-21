@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<style>
+@keyframes blink
+{
+from{opacity:1;}
+to{opacity:0;}
+}
+@keyframes randomcolor
+{
+10%{color:red}
+20%{color:green}
+30%{color:yellow}
+40%{color:purple}
+50%{color:orange}
+}
+@keyframes movetext
+{
+from{margin-left:-200px;}
+to{margin-left:100%;}
+}
+body
+{background:black;}
+#logo
+{
+color:white;
+font-size:50px;
+padding:30px;
+animation:blink 1s infinite alternate
+}
+#tagline
+{
+color:white;
+font-size:100px;
+padding:30px;
+animation:randomcolor 2s infinite,movetext 12s ease-out infinite alternate;
+}
+
+</style>
+<body>
+<h1 style'color:white'>keyframe animation</h1>
+<div id="logo">
+TATA
+</div>
+<div id="tagline">
+WE OFFER QUALITY
+<li><a href="test.html">practice work</a></li>
+</body>
+</html>
