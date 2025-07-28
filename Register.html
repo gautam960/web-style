@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<style>
+header{
+text-aligh:center;
+font-size:30px;
+text-transform:uppercase;
+text-shadpw:5px 5px 5px gray;
+}
+main
+{
+text-align:center;
+width:95%;
+margin:20px;
+padding:20px;
+border-radius:10px;
+box-shadow:10px 10px 10px gray;
+}
+input,reset
+{
+width:100%;
+}
+input[type=color]
+{
+width:50px;
+}
+input:valid
+{border-color:green;
+}
+input:invalid
+{border-color: rgb(211, 39, 50);
+}
+input:invalid + span::before{
+content:"❌";
+color:red;
+}
+input:valid + span::before{
+content:"✅";
+color:green;
+}
+input:focus
+{
+  border-color:rgb(137,6,122);;
+border-width:3px;;
+}
+
+</style>
+<body>
+<header>
+Registe
+</header>
+<main>
+<table before="1" cellpadding="5">
+<caption>Register</caption>
+<form action="http://tataplay.com/user/login.php"method="post">
+<tr>
+<td><label for="Name">Name </label></td>
+<td>
+<input id="Name" type="text" placeholder="type login id..."title="Type your login id...."><span></span></td>
+</tr>
+<td><label for="email">E-mail </label></td>
+<td>
+<input id="email" type="email">
+</tr>
+<tr>
+<td><label> for="age">Age</label></td>
+<td>
+<input id="age"type="Number" max="50' min="18">
+</td>
+</tr>
+<tr>
+<td><label for="message">Message</label></td>
+<td>
+<twxtarea cols="40" rows="10">Type Text here..</textarea>
+</td>
+</tr>
+<tr>
+<td><label for="gen"> Gender</label></td>
+<td>
+Male<input type="radio"value="male" checked name="gender">
+Female<input type="radio"value="female" checked name="gender">
+Others<input type="radio"value="others" checked name="gender">
+</td>
+</tr>
+<tr>
+<td><label for="hobby">Hobby</label></td>
+<td>
+Reading <input type="checkbox" value="Reading">
+Writing<input type="checkbox" value="Writing">
+Drawing <input type="checkbox" value="Drawing">
+Cooking <input type="checkbox" value="Cooking">
+</td>
+</tr>
+<tr>
+<td><label for="Country">Country</label></td>
+<td>
+<select id="Country">
+<option value="in">India </option>
+<option value="Usa">USA </option>
+<option value="Au">Australlia </option>
+<option value="UK">UK </option>
+</select>
+</td>
+</tr>
+<tr>
+<td><label for="Upload">Age</label></td>
+<td>
+File Name <input id="Upload" type="File">
+</td>
+</tr>
+<tr>
+<td><label for="mycolor">Select your color</label></td>
+<td>
+File Name <input type="color">
+</td>
+</tr>
+<tr><td></td>
+<td>
+<input type="submit" value="Register">
+<input type="reset"></td>
+</tr>
+</form>
+</table>
+<li><a href="test.html"> practice work</a></li>
+
+
+
+</main>
+
+</body>
+</html>
